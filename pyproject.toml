@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eiaf"
+version = "0.1.0"
+description = "Explainable Investment Analytics Framework: audit-ready explainability artifacts for tabular ML."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Deepak Saxena"}]
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.22",
+  "pandas>=2.0",
+  "scikit-learn>=1.2"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-cov>=4.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
