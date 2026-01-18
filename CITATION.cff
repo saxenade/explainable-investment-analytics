@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it as below."
+title: "Explainable Investment Analytics Framework (EIAF)"
+type: software
+version: 0.1.0
+date-released: 2026-01-18
+authors:
+  - family-names: Saxena
+    given-names: Deepak
+repository-code: "https://github.com/saxenade/explainable-investment-analytics"
+license: MIT
+keywords:
+  - explainable ai
+  - xai
+  - model governance
+  - audit artifacts
+  - investment analytics
+  - credit risk
+  - scikit-learn
